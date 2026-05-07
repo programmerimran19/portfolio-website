@@ -1,20 +1,26 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Case Studies", href: "#results" },
-  { label: "Certifications", href: "#certifications" },
-  { label: "Skills", href: "#skills" },
-  { label: "Resume", href: "/cv", isRoute: true },
-  { label: "Contact", href: "#contact" },
+const hashLinks = [
+  { label: "About", hash: "#about" },
+  { label: "Services", hash: "#services" },
+  { label: "Case Studies", hash: "#results" },
+  { label: "Certifications", hash: "#certifications" },
+  { label: "Skills", hash: "#skills" },
 ];
+
+const linkClass =
+  "text-sm text-muted-foreground hover:text-foreground transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-primary after:transition-all hover:after:w-full";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
+
+  // On non-home pages, prefix hash links with "/" so they navigate home first
+  const href = (hash: string) => (isHome ? hash : `/${hash}`);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -25,33 +31,25 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass-strong shadow-lg shadow-background/50" : "bg-transparent"}`}>
       <div className="container flex items-center justify-between h-16">
-        <a href="#" className="font-display text-xl font-bold text-gradient">
+        <Link to="/" className="font-display text-xl font-bold text-gradient">
           Programmer Imran
-        </a>
+        </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) =>
-            link.isRoute ? (
-              <Link
-                key={link.href}
-                to={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-primary after:transition-all hover:after:w-full"
-              >
-                {link.label}
-              </Link>
-            ) : (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-primary after:transition-all hover:after:w-full"
-              >
-                {link.label}
-              </a>
-            )
-          )}
+          {hashLinks.map((link) => (
+            <a key={link.hash} href={href(link.hash)} className={linkClass}>
+              {link.label}
+            </a>
+          ))}
+          <Link to="/cv" className={linkClass}>
+            Resume
+          </Link>
+          <a href={href("#contact")} className={linkClass}>
+            Contact
+          </a>
           <a
-            href="#contact"
+            href={href("#contact")}
             className="bg-gradient-primary text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity hover:shadow-[0_0_30px_hsl(172_66%_50%_/_0.2)]"
           >
             Hire Me
@@ -70,29 +68,32 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden glass-strong px-6 pb-6 space-y-4 border-t border-border/50">
-          {navLinks.map((link) =>
-            link.isRoute ? (
-              <Link
-                key={link.href}
-                to={link.href}
-                onClick={() => setOpen(false)}
-                className="block text-muted-foreground hover:text-foreground transition-colors py-1"
-              >
-                {link.label}
-              </Link>
-            ) : (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="block text-muted-foreground hover:text-foreground transition-colors py-1"
-              >
-                {link.label}
-              </a>
-            )
-          )}
+          {hashLinks.map((link) => (
+            <a
+              key={link.hash}
+              href={href(link.hash)}
+              onClick={() => setOpen(false)}
+              className="block text-muted-foreground hover:text-foreground transition-colors py-1"
+            >
+              {link.label}
+            </a>
+          ))}
+          <Link
+            to="/cv"
+            onClick={() => setOpen(false)}
+            className="block text-muted-foreground hover:text-foreground transition-colors py-1"
+          >
+            Resume
+          </Link>
           <a
-            href="#contact"
+            href={href("#contact")}
+            onClick={() => setOpen(false)}
+            className="block text-muted-foreground hover:text-foreground transition-colors py-1"
+          >
+            Contact
+          </a>
+          <a
+            href={href("#contact")}
             onClick={() => setOpen(false)}
             className="block bg-gradient-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold text-center"
           >

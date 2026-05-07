@@ -169,13 +169,15 @@ const CV = () => {
                   </div>
                 )}
 
-                {/* PDF iframe */}
+                {/* PDF iframe — onMouseLeave returns focus to parent so navbar stays clickable */}
                 <iframe
                   key={previewUrl}
                   src={previewUrl}
                   className="w-full rounded-xl border border-border/50 h-[500px] md:h-[700px]"
                   title={previewLabel}
+                  tabIndex={-1}
                   onLoad={() => setIframeLoading(false)}
+                  onMouseLeave={() => window.focus()}
                 />
               </>
             )}

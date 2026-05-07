@@ -1,7 +1,7 @@
 import { ArrowRight, MapPin } from "lucide-react";
 import profileImg from "@/assets/imran-profile.jpeg";
 
-const badges = ["Meta Ads", "Google Ads", "GA4 Certified", "FB CAPI & GTM", "Server-Side Tracking", "220K+ Downloads"];
+const badges = ["Business Analyst", "GA4 Certified", "Meta & Google Ads", "Business Intelligence", "Decision Intelligence", "FB CAPI & GTM"];
 
 const HeroSection = () => {
   return (
@@ -28,11 +28,11 @@ const HeroSection = () => {
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] mb-4 animate-fade-up">
-              AI-Powered Marketer,
+              Business Analyst, AI-Driven
               <br />
-              Analyst & Growth Strategist
+              Marketer & Data Strategist
               <br />
-              <span className="text-gradient">Turning Data Into Scalable ROI</span>
+              <span className="text-gradient">Turning Intelligence Into Growth</span>
             </h1>
 
             <div className="flex flex-wrap gap-2 mb-6 animate-fade-up">
@@ -47,7 +47,7 @@ const HeroSection = () => {
             </div>
 
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed animate-fade-up-delay-1">
-              Combining the power of AI, data analytics, and 7+ years of performance marketing expertise to turn ad budgets into measurable, scalable business growth. Google Ads Search Certified • Google Analytics Certified • AI-Powered Ads Certified.
+              Bridging business strategy and data intelligence — with 7+ years of experience in Business Analysis, full-funnel analytics, and AI-powered performance marketing. Google Analytics Certified • Google Ads Search Certified • AI-Powered Ads Certified.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-2">

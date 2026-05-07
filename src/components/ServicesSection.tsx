@@ -1,4 +1,4 @@
-import { Megaphone, Search, LineChart, Settings, PieChart, Zap, BarChart3, Brain } from "lucide-react";
+import { Megaphone, Search, LineChart, Settings, PieChart, Zap, BarChart3, Brain, ClipboardList, BarChart2 } from "lucide-react";
 
 const services = [
   {
@@ -48,6 +48,18 @@ const services = [
     title: "AI-Powered Growth Strategy",
     desc: "Using AI and data modeling to identify growth opportunities, forecast campaign performance, and build scalable marketing systems.",
     tags: ["AI Tools", "Audience Intelligence", "Forecasting"],
+  },
+  {
+    icon: ClipboardList,
+    title: "Business Analysis & Docs",
+    desc: "Requirements gathering, user story writing, SRS, WBS, and functional specs — bridging business goals with technical delivery.",
+    tags: ["User Stories", "SRS", "WBS", "Agile"],
+  },
+  {
+    icon: BarChart2,
+    title: "Business Intelligence",
+    desc: "Custom BI dashboards, executive KPI reports, and data models that make complex business data instantly actionable.",
+    tags: ["Looker Studio", "Business Intelligence", "KPI Tracking"],
   },
 ];
 

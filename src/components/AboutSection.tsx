@@ -1,26 +1,26 @@
-import { Brain, LineChart, Target, LayoutDashboard } from "lucide-react";
+import { BarChart3, Brain, FileText, TrendingUp } from "lucide-react";
 import profileImg from "@/assets/imran-profile.jpeg";
 
 const features = [
   {
+    icon: BarChart3,
+    title: "Business Intelligence",
+    desc: "Custom BI dashboards and KPI frameworks that transform raw data into executive-level insights for smarter business decisions.",
+  },
+  {
     icon: Brain,
-    title: "AI-Augmented Strategy",
-    desc: "Leveraging AI tools for audience intelligence, creative analysis, and predictive campaign decisions.",
-  },
-  {
-    icon: LineChart,
-    title: "Full-Funnel Analytics",
-    desc: "GA4, GTM, FB CAPI — complete tracking architecture from first click to final conversion.",
-  },
-  {
-    icon: Target,
-    title: "Performance Marketing",
-    desc: "Meta and Google Ads campaigns engineered for purchases, installs, and measurable ROI — not vanity metrics.",
-  },
-  {
-    icon: LayoutDashboard,
     title: "Decision Intelligence",
-    desc: "Custom Looker Studio dashboards and data models that turn raw numbers into clear business decisions.",
+    desc: "AI-powered frameworks that connect data signals to real business actions — turning analytics into competitive advantage.",
+  },
+  {
+    icon: FileText,
+    title: "Business Analysis",
+    desc: "End-to-end BA delivery — requirement gathering, user stories, SRS, WBS, and Agile sprint execution that aligns teams and drives results.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Full-Funnel Analytics",
+    desc: "GA4 + GTM + FB CAPI tracking architecture — complete attribution from first click to final conversion, zero data gaps.",
   },
 ];
 
@@ -32,8 +32,8 @@ const AboutSection = () => {
           <div>
             <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">About Me</span>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Data Tells the Story. <br />
-              <span className="text-gradient">I Help You Act on It.</span>
+              Where Business Strategy <br />
+              <span className="text-gradient">Meets Data Intelligence.</span>
             </h2>
 
             {/* Mobile profile photo */}
@@ -51,13 +51,13 @@ const AboutSection = () => {
             </div>
 
             <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
-              I'm Imran — an AI-driven performance marketer and data analytics specialist with 7+ years of experience managing $50K+ in paid media across Meta and Google Ads. I don't just run campaigns — I build intelligent systems that connect ad spend to real business outcomes.
+              I'm Imran — a Business Analyst and AI-driven data specialist with 7+ years of experience turning complex business problems into clear, measurable outcomes across eCommerce, EdTech, and SaaS platforms.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              My approach combines AI-powered decision-making, full-funnel analytics (GA4, GTM, FB CAPI), and performance marketing strategy to help brands scale with precision — not guesswork. From campaign architecture to custom dashboards, every decision is backed by data.
+              I bridge the gap between business needs and technical execution — from requirement gathering, user story writing, and SRS documentation to Business Intelligence dashboards, Decision Intelligence frameworks, and full-funnel analytics architecture (GA4 + GTM + FB CAPI). Every recommendation I make is backed by data, every strategy built to scale.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Currently working as a Business Analyst at Smart Sohay and Amar iSchool, applying analytics and AI tools to drive measurable growth across EdTech and SaaS platforms.
+              Currently working as Business Analyst at Smart Sohay and Amar iSchool — applying AI-powered analytics, Agile methodologies, and performance marketing to drive measurable growth across digital platforms.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">

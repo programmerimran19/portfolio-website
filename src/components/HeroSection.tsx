@@ -1,7 +1,7 @@
 import { ArrowRight, MapPin } from "lucide-react";
 import profileImg from "@/assets/imran-profile.jpeg";
 
-const badges = ["Meta Ads", "Google Ads", "GA4 Certified", "AI & Data Analytics", "Decision Intelligence", "Growth Leader"];
+const badges = ["Meta Ads", "Google Ads", "GA4 Certified", "FB CAPI & GTM", "Server-Side Tracking", "220K+ Downloads"];
 
 const HeroSection = () => {
   return (

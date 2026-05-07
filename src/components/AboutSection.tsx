@@ -60,7 +60,7 @@ const AboutSection = () => {
               Currently working as a Business Analyst at Smart Sohay and Amar iSchool, applying analytics and AI tools to drive measurable growth across EdTech and SaaS platforms.
             </p>
 
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
                 href="https://www.upwork.com/freelancers/~018a0ad419394dc43b"
                 target="_blank"
@@ -68,6 +68,14 @@ const AboutSection = () => {
                 className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
               >
                 View Upwork Profile
+              </a>
+              <a
+                href="https://www.fiverr.com/users/imran62462"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
+              >
+                View Fiverr Profile
               </a>
             </div>
           </div>

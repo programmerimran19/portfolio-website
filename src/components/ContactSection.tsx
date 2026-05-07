@@ -24,6 +24,15 @@ const ContactSection = () => {
               Hire Me on Upwork
             </a>
             <a
+              href="https://www.fiverr.com/users/imran62462"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 glass text-foreground px-8 py-4 rounded-xl font-semibold hover:border-primary/30 transition-all"
+            >
+              <ExternalLink size={18} />
+              Hire Me on Fiverr
+            </a>
+            <a
               href="https://wa.me/8801521412857"
               target="_blank"
               rel="noopener noreferrer"

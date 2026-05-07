@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer className="py-10 border-t border-border/50">
       <div className="container">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <span className="font-display text-lg font-bold text-gradient">Programmer Imran</span>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+          <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-4 text-center sm:text-left">
+            <span className="font-display text-lg font-bold text-gradient whitespace-nowrap">Programmer Imran</span>
             <span className="text-xs text-muted-foreground">Business Analyst · AI-Driven Analytics · Performance Marketing Specialist</span>
           </div>
           

@@ -27,10 +27,10 @@ const HeroSection = () => {
               </span>
             </div>
 
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] mb-4 animate-fade-up">
+            <h1 className="font-display text-3xl sm:text-5xl lg:text-7xl font-bold leading-[1.15] mb-4 animate-fade-up">
               Business Analyst, AI-Driven
-              <br />
-              Marketer & Data Strategist
+              <br className="hidden sm:block" />
+              {" "}Marketer & Data Strategist
               <br />
               <span className="text-gradient">Turning Intelligence Into Growth</span>
             </h1>
@@ -46,21 +46,21 @@ const HeroSection = () => {
               ))}
             </div>
 
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed animate-fade-up-delay-1">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed animate-fade-up-delay-1">
               Bridging business strategy and data intelligence — with 7+ years of experience in Business Analysis, full-funnel analytics, and AI-powered performance marketing. Google Analytics Certified • Google Ads Search Certified • AI-Powered Ads Certified.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-2">
+            <div className="flex flex-col sm:flex-row gap-3 animate-fade-up-delay-2">
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-all glow-shadow hover:shadow-[0_0_80px_hsl(172_66%_50%_/_0.25)]"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-all glow-shadow hover:shadow-[0_0_80px_hsl(172_66%_50%_/_0.25)]"
               >
                 Let's Work Together
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#results"
-                className="inline-flex items-center justify-center gap-2 glass text-foreground px-8 py-4 rounded-xl font-semibold hover:bg-secondary/80 transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 glass text-foreground px-8 py-4 rounded-xl font-semibold hover:bg-secondary/80 transition-all"
               >
                 See Case Studies
               </a>

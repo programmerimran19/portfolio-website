@@ -7,7 +7,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="py-20 relative section-divider">
+    <section className="py-12 sm:py-20 relative section-divider">
       <div className="container">
         <div className="glass rounded-2xl p-8 sm:p-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">

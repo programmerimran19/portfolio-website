@@ -89,7 +89,7 @@ const caseStudies = [
 
 const ResultsSection = () => {
   return (
-    <section id="results" className="py-24 relative section-divider">
+    <section id="results" className="py-16 md:py-24 relative section-divider">
       <div className="container">
         <div className="text-center mb-16">
           <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Case Studies</span>
@@ -132,11 +132,11 @@ const ResultsSection = () => {
               </div>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-3 gap-3 mb-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 mb-6">
                 {study.stats.map((stat) => (
-                  <div key={stat.label} className="text-center p-3 rounded-lg bg-background/50">
-                    <div className="text-base font-display font-bold text-foreground">{stat.value}</div>
-                    <div className="text-[10px] text-muted-foreground mt-0.5 uppercase tracking-wider">{stat.label}</div>
+                  <div key={stat.label} className="text-center p-2 sm:p-3 rounded-lg bg-background/50">
+                    <div className="text-sm sm:text-base font-display font-bold text-foreground">{stat.value}</div>
+                    <div className="text-[10px] text-muted-foreground mt-0.5 uppercase tracking-wider leading-tight">{stat.label}</div>
                   </div>
                 ))}
               </div>

@@ -23,7 +23,7 @@ const skillCategories = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24 relative section-divider">
+    <section id="skills" className="py-16 md:py-24 relative section-divider">
       <div className="container">
         <div className="text-center mb-16">
           <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Expertise</span>

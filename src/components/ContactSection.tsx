@@ -2,7 +2,7 @@ import { Mail, ExternalLink, Linkedin, Facebook, MessageCircle } from "lucide-re
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 relative section-divider">
+    <section id="contact" className="py-16 md:py-24 relative section-divider">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Get In Touch</span>
@@ -18,7 +18,7 @@ const ContactSection = () => {
               href="https://www.upwork.com/freelancers/~018a0ad419394dc43b"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-all glow-shadow hover:shadow-[0_0_80px_hsl(172_66%_50%_/_0.25)]"
+              className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-4 rounded-xl font-semibold hover:opacity-90 transition-all glow-shadow hover:shadow-[0_0_80px_hsl(172_66%_50%_/_0.25)]"
             >
               <ExternalLink size={18} />
               Hire Me on Upwork
@@ -27,7 +27,7 @@ const ContactSection = () => {
               href="https://www.fiverr.com/users/imran62462"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center gap-2 glass text-foreground px-8 py-4 rounded-xl font-semibold hover:border-primary/30 transition-all"
+              className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 glass text-foreground px-6 py-4 rounded-xl font-semibold hover:border-primary/30 transition-all"
             >
               <ExternalLink size={18} />
               Hire Me on Fiverr
@@ -36,7 +36,7 @@ const ContactSection = () => {
               href="https://wa.me/8801521412857"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center gap-2 glass text-foreground px-8 py-4 rounded-xl font-semibold hover:border-primary/30 transition-all"
+              className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 glass text-foreground px-6 py-4 rounded-xl font-semibold hover:border-primary/30 transition-all"
             >
               <MessageCircle size={18} />
               WhatsApp Me

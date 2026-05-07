@@ -65,7 +65,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-24 relative section-divider">
+    <section id="services" className="py-16 md:py-24 relative section-divider">
       <div className="container">
         <div className="text-center mb-16">
           <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Services</span>

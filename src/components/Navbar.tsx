@@ -67,7 +67,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden glass-strong px-6 pb-6 space-y-4 border-t border-border/50">
+        <div className="md:hidden glass-strong px-6 pt-4 pb-6 space-y-4 border-t border-border/50">
           {hashLinks.map((link) => (
             <a
               key={link.hash}

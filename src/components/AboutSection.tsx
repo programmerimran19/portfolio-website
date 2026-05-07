@@ -26,7 +26,7 @@ const features = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 relative section-divider">
+    <section id="about" className="py-16 md:py-24 relative section-divider">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
@@ -60,12 +60,12 @@ const AboutSection = () => {
               Currently working as Business Analyst at Smart Sohay and Amar iSchool — applying AI-powered analytics, Agile methodologies, and performance marketing to drive measurable growth across digital platforms.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a
                 href="https://www.upwork.com/freelancers/~018a0ad419394dc43b"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
               >
                 View Upwork Profile
               </a>
@@ -73,7 +73,7 @@ const AboutSection = () => {
                 href="https://www.fiverr.com/users/imran62462"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity"
               >
                 View Fiverr Profile
               </a>

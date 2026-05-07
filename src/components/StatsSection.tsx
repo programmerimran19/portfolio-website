@@ -1,8 +1,8 @@
 const stats = [
   { value: "7+", label: "Years Experience" },
+  { value: "15+", label: "Brands & Clients Served" },
+  { value: "451K+", label: "Data Points Analyzed" },
   { value: "$50K+", label: "Ad Spend Managed" },
-  { value: "652+", label: "Campaigns Analyzed" },
-  { value: "220K+", label: "App Downloads" },
 ];
 
 const StatsSection = () => {

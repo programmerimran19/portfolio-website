@@ -2,8 +2,8 @@ import { ArrowRight, MapPin } from "lucide-react";
 import profileImg from "@/assets/imran-profile.jpeg";
 
 const badgeRows = [
-  ["Business Analyst", "GA4 Certified", "Business Intelligence"],
-  ["Decision Intelligence", "Meta & Google Ads", "AI-Powered Analytics"],
+  ["Business Analyst", "GA4 Certified", "Business Intelligence", "Decision Intelligence"],
+  ["Meta & Google Ads", "AI-Powered Analytics", "FB CAPI & GTM"],
 ];
 
 const HeroSection = () => {
@@ -30,10 +30,12 @@ const HeroSection = () => {
               </span>
             </div>
 
-            <h1 className="font-display font-bold leading-[1.15] mb-4 animate-fade-up">
-              <span className="block text-3xl sm:text-5xl lg:text-6xl">Business Analyst. Data Strategist.</span>
-              <span className="block text-3xl sm:text-5xl lg:text-6xl">AI-Driven Growth Architect.</span>
-              <span className="block text-xl sm:text-3xl lg:text-4xl mt-2 text-gradient">From Data to Decisions. From Insights to Impact.</span>
+            <h1 className="font-display font-bold leading-[1.2] mb-4 animate-fade-up">
+              <span className="block text-2xl sm:text-4xl lg:text-5xl">Business Analyst. Data Strategist.</span>
+              <span className="block text-2xl sm:text-4xl lg:text-5xl">AI-Driven Growth Architect.</span>
+              <span className="block text-base sm:text-xl lg:text-2xl mt-2 text-gradient">
+                From Data to Decisions.<br />From Insights to Impact.
+              </span>
             </h1>
 
             <div className="flex flex-col gap-2 mb-6 animate-fade-up">

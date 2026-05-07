@@ -1,7 +1,10 @@
 import { ArrowRight, MapPin } from "lucide-react";
 import profileImg from "@/assets/imran-profile.jpeg";
 
-const badges = ["Business Analyst", "GA4 Certified", "Meta & Google Ads", "Business Intelligence", "Decision Intelligence", "FB CAPI & GTM"];
+const badgeRows = [
+  ["Business Analyst", "GA4 Certified", "Business Intelligence"],
+  ["Decision Intelligence", "Meta & Google Ads", "AI-Powered Analytics"],
+];
 
 const HeroSection = () => {
   return (
@@ -27,22 +30,24 @@ const HeroSection = () => {
               </span>
             </div>
 
-            <h1 className="font-display text-3xl sm:text-5xl lg:text-7xl font-bold leading-[1.15] mb-4 animate-fade-up">
-              Business Analyst, AI-Driven
-              <br className="hidden sm:block" />
-              {" "}Marketer & Data Strategist
-              <br />
-              <span className="text-gradient">Turning Intelligence Into Growth</span>
+            <h1 className="font-display font-bold leading-[1.15] mb-4 animate-fade-up">
+              <span className="block text-3xl sm:text-5xl lg:text-6xl">Business Analyst. Data Strategist.</span>
+              <span className="block text-3xl sm:text-5xl lg:text-6xl">AI-Driven Growth Architect.</span>
+              <span className="block text-xl sm:text-3xl lg:text-4xl mt-2 text-gradient">From Data to Decisions. From Insights to Impact.</span>
             </h1>
 
-            <div className="flex flex-wrap gap-2 mb-6 animate-fade-up">
-              {badges.map((badge) => (
-                <span
-                  key={badge}
-                  className="text-xs px-3 py-1.5 rounded-full bg-primary/[0.1] text-primary font-medium border border-primary/20"
-                >
-                  {badge}
-                </span>
+            <div className="flex flex-col gap-2 mb-6 animate-fade-up">
+              {badgeRows.map((row, rowIdx) => (
+                <div key={rowIdx} className="flex flex-wrap gap-2">
+                  {row.map((badge) => (
+                    <span
+                      key={badge}
+                      className="text-xs px-3 py-1.5 rounded-full bg-primary/[0.1] text-primary font-medium border border-primary/20"
+                    >
+                      {badge}
+                    </span>
+                  ))}
+                </div>
               ))}
             </div>
 

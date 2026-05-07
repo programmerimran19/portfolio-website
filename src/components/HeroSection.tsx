@@ -34,7 +34,7 @@ const HeroSection = () => {
               <span className="block text-2xl sm:text-4xl lg:text-5xl">Business Analyst. Data Strategist.</span>
               <span className="block text-2xl sm:text-4xl lg:text-5xl">AI-Driven Growth Architect.</span>
               <span className="block text-base sm:text-xl lg:text-2xl mt-2 text-gradient">
-                From Data to Decisions.<br />From Insights to Impact.
+                From Data to Decisions. From Insights to Impact.
               </span>
             </h1>
 

@@ -54,7 +54,7 @@ const HeroSection = () => {
             </div>
 
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed animate-fade-up-delay-1 text-justify">
-              Bridging business strategy and data intelligence — with 7+ years of experience in Business Analysis, full-funnel analytics, and AI-powered performance marketing. Google Analytics Certified • Google Ads Search Certified • AI-Powered Ads Certified.
+              Bridging business complexity and data intelligence to deliver clear, measurable outcomes — 7+ years across Business Analysis, full-funnel analytics (GA4 + GTM + FB CAPI), and AI-powered strategy. Google Analytics Certified • Google Ads Search Certified • AI-Powered Ads Certified.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 animate-fade-up-delay-2">

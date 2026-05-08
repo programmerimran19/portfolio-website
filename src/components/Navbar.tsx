@@ -46,12 +46,15 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Link to="/cv" className={linkClass}>
-            Resume
-          </Link>
           <a href={href("#contact")} className={linkClass}>
             Contact
           </a>
+          <Link
+            to="/cv"
+            className="border border-primary/60 text-primary px-5 py-2 rounded-lg text-sm font-semibold hover:bg-primary/10 transition-all hover:border-primary hover:shadow-[0_0_20px_hsl(172_66%_50%_/_0.15)]"
+          >
+            Profile
+          </Link>
           <a
             href={href("#contact")}
             className="bg-gradient-primary text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity hover:shadow-[0_0_30px_hsl(172_66%_50%_/_0.2)]"
@@ -85,9 +88,9 @@ const Navbar = () => {
           <Link
             to="/cv"
             onClick={() => setOpen(false)}
-            className="block text-muted-foreground hover:text-foreground transition-colors py-1"
+            className="block text-primary font-semibold hover:text-foreground transition-colors py-1"
           >
-            Resume
+            Profile
           </Link>
           <a
             href={href("#contact")}

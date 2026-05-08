@@ -13,21 +13,27 @@ const CV_CONFIGS = [
   {
     key: "analytics",
     filename: "analytics-cv.pdf",
-    title: "Analytics & Tracking Specialist",
-    subtitle: "GA4 · GTM · FB CAPI · Server-Side",
+    badge: "RESUME",
+    title: "International Resume",
+    subtitle: "GA4 · GTM · FB CAPI · Global Roles",
     description:
-      "Best for analytics, tracking setup, MarTech, and data infrastructure roles.",
+      "Best for Upwork, Fiverr, and international clients. Clean 1-page format.",
     tags: ["GA4", "GTM", "FB CAPI", "Looker Studio", "Server-Side"],
+    previewLabel: "Preview Resume",
+    downloadLabel: "Download Resume",
     Icon: BarChart2,
   },
   {
     key: "business",
     filename: "business-analyst-cv.pdf",
-    title: "Business Analyst",
-    subtitle: "eCommerce · SaaS · Agile · Product",
+    badge: "CV",
+    title: "Full CV — Bangladesh & Local",
+    subtitle: "eCommerce · SaaS · Agile · BA Roles",
     description:
-      "Best for BA, product analyst, and eCommerce platform roles.",
+      "Best for local companies, recruitment agencies, and detailed role applications. Comprehensive 2-page format.",
     tags: ["Agile", "SRS", "WBS", "eCommerce", "Stakeholder Mgmt"],
+    previewLabel: "Preview CV",
+    downloadLabel: "Download CV",
     Icon: Briefcase,
   },
 ] as const;
@@ -79,15 +85,15 @@ const CV = () => {
           {/* ── Section 1: Header ─────────────────────────────────────────── */}
           <div className="text-center mb-16 animate-fade-up">
             <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">
-              MY RESUMES
+              MY PROFILE
             </span>
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              Download My{" "}
+              Resume &{" "}
               <span className="text-gradient">CV</span>
             </h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto leading-relaxed">
-              Choose the version that matches your hiring need. Preview online or
-              download as PDF.
+              7+ years of expertise, two focused formats. Find the version built
+              for your role — and see exactly what I bring to the table.
             </p>
           </div>
 
@@ -95,6 +101,13 @@ const CV = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {CV_CONFIGS.map((cv) => (
               <div key={cv.key} className="glass rounded-2xl p-8 flex flex-col">
+                {/* Badge */}
+                <div className="mb-4">
+                  <span className="text-xs px-3 py-1 rounded-full border border-primary/40 text-primary font-semibold tracking-wider">
+                    {cv.badge}
+                  </span>
+                </div>
+
                 {/* Icon */}
                 <div className="w-12 h-12 rounded-xl bg-gradient-subtle flex items-center justify-center mb-5">
                   <cv.Icon size={22} className="text-primary" />
@@ -126,14 +139,14 @@ const CV = () => {
                     className="flex-1 inline-flex items-center justify-center gap-2 glass text-foreground px-4 py-2.5 rounded-xl text-sm font-semibold hover:border-primary/30 transition-all"
                   >
                     <Eye size={15} />
-                    Preview CV
+                    {cv.previewLabel}
                   </button>
                   <button
                     onClick={() => handleDownload(cv.filename)}
                     className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-4 py-2.5 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity"
                   >
                     <Download size={15} />
-                    Download PDF ↓
+                    {cv.downloadLabel} ↓
                   </button>
                 </div>
               </div>

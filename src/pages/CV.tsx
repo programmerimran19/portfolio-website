@@ -16,8 +16,8 @@ const CV_CONFIGS = [
     key: "analytics",
     filename: "analytics-cv.pdf",
     badge: "RESUME",
-    title: "International Resume",
-    tagline: "Sharp. Focused. Ready to Impress.",
+    title: "Sharp. Focused. Ready to Impress.",
+    tagline: "",
     subtitle: "Analytics · AI-Powered · Tracking · Growth Strategy",
     description:
       "7+ years of expertise distilled into one powerful document — built for decision-makers who value clarity over noise.",
@@ -30,8 +30,8 @@ const CV_CONFIGS = [
     key: "business",
     filename: "business-analyst-cv.pdf",
     badge: "CV",
-    title: "Full CV — Bangladesh & Local",
-    tagline: "Deep Dive Into My Expertise.",
+    title: "Deep Dive Into My Expertise.",
+    tagline: "",
     subtitle: "Business Analysis · Data Intelligence · Analytics · Strategy",
     description:
       "The full story behind the results — Business Analysis, Data Intelligence, and AI-driven strategy, backed by real numbers and proven outcomes.",
@@ -117,9 +117,8 @@ const CV = () => {
                   <cv.Icon size={22} className="text-primary" />
                 </div>
 
-                {/* Title, tagline & subtitle */}
+                {/* Title & subtitle */}
                 <h2 className="font-display text-xl font-bold mb-1">{cv.title}</h2>
-                <p className="text-muted-foreground text-xs italic mb-2">{cv.tagline}</p>
                 <p className="text-primary text-sm font-medium mb-3">{cv.subtitle}</p>
                 <p className="text-muted-foreground text-sm mb-5 leading-relaxed flex-1">
                   {cv.description}

@@ -14,7 +14,7 @@ const SHARED_TAGS = ["GA4", "GTM", "FB CAPI", "Looker Studio", "Meta Ads", "Goog
 const CV_CONFIGS = [
   {
     key: "analytics",
-    filename: "analytics-cv.pdf",
+    filename: "AL_IMRAN_RESUME.pdf",
     badge: "RESUME",
     title: "Sharp. Focused. Ready to Impress.",
     tagline: "",
@@ -28,7 +28,7 @@ const CV_CONFIGS = [
   },
   {
     key: "business",
-    filename: "business-analyst-cv.pdf",
+    filename: "AL_IMRAN_CV.pdf",
     badge: "CV",
     title: "Deep Dive Into My Expertise.",
     tagline: "",

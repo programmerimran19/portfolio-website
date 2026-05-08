@@ -50,13 +50,13 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
+            <p className="text-muted-foreground mb-6 leading-relaxed text-lg text-justify">
               I'm Imran — a Business Analyst and AI-driven data specialist with 7+ years of experience turning complex business problems into clear, measurable outcomes across eCommerce, EdTech, and SaaS platforms.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="text-muted-foreground leading-relaxed mb-6 text-justify">
               I bridge the gap between business needs and technical execution — from requirement gathering, user story writing, and SRS documentation to Business Intelligence dashboards, Decision Intelligence frameworks, and full-funnel analytics architecture (GA4 + GTM + FB CAPI). Every recommendation I make is backed by data, every strategy built to scale.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-justify">
               Currently working as Business Analyst at Smart Sohay and Amar iSchool — applying AI-powered analytics, Agile methodologies, and performance marketing to drive measurable growth across digital platforms.
             </p>
 

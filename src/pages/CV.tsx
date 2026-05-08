@@ -140,7 +140,7 @@ const CV = () => {
                 <div className="flex gap-3">
                   <button
                     onClick={() => handlePreview(cv.filename, cv.title)}
-                    className="flex-1 inline-flex items-center justify-center gap-2 glass text-foreground px-4 py-2.5 rounded-xl text-sm font-semibold hover:border-primary/30 transition-all"
+                    className="flex-1 inline-flex items-center justify-center gap-2 glass text-foreground px-4 py-2.5 rounded-xl text-sm font-semibold hover:border-primary/30 transition-all whitespace-nowrap"
                   >
                     <Eye size={15} />
                     {cv.previewLabel}

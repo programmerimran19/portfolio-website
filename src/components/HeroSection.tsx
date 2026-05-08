@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/[0.02] blur-[120px]" />
       </div>
 
-      <div className="container relative z-10">
+      <div className="container relative z-10 py-8 lg:py-0">
         <div className="grid lg:grid-cols-[1fr_auto] gap-12 items-center">
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 text-muted-foreground text-sm mb-6 animate-fade-up">
@@ -28,6 +28,20 @@ const HeroSection = () => {
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                 Available for projects
               </span>
+            </div>
+
+            {/* Mobile/tablet profile photo */}
+            <div className="flex lg:hidden justify-center mb-8 animate-fade-up">
+              <div className="relative">
+                <div className="absolute -inset-3 rounded-full bg-gradient-primary opacity-20 blur-xl animate-pulse-glow" />
+                <div className="relative w-32 h-32 sm:w-44 sm:h-44 rounded-full overflow-hidden border-2 border-primary/30 shadow-2xl">
+                  <img
+                    src={profileImg}
+                    alt="Programmer Imran"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </div>
             </div>
 
             <h1 className="font-display font-bold leading-[1.2] mb-4 animate-fade-up">

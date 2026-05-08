@@ -14,12 +14,15 @@ const queryClient = new QueryClient();
 const ScrollToHash = () => {
   const { hash, pathname } = useLocation();
   useEffect(() => {
-    if (!hash) return;
-    const timer = setTimeout(() => {
-      const el = document.querySelector(hash);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }, 80);
-    return () => clearTimeout(timer);
+    if (hash) {
+      const timer = setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 80);
+      return () => clearTimeout(timer);
+    } else {
+      window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+    }
   }, [hash, pathname]);
   return null;
 };

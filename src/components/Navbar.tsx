@@ -31,7 +31,11 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass-strong shadow-lg shadow-background/50" : "bg-transparent"}`}>
       <div className="container flex items-center justify-between h-16">
-        <Link to="/" className="font-display text-xl font-bold text-gradient">
+        <Link
+          to="/"
+          className="font-display text-xl font-bold text-gradient"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           Programmer Imran
         </Link>
 

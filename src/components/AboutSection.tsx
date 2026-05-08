@@ -31,7 +31,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">About Me</span>
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
               Where Business Strategy <br />
               <span className="text-gradient">Meets Data Intelligence.</span>
             </h2>

@@ -9,16 +9,19 @@ import { supabase, CV_BUCKET } from "@/lib/supabase";
 //   • analytics-cv.pdf        → Analytics & Tracking CV
 //   • business-analyst-cv.pdf → Business Analyst CV
 
+const SHARED_TAGS = ["GA4", "GTM", "FB CAPI", "Looker Studio", "Meta Ads", "Google Ads", "CleverTap", "Microsoft Clarity"] as const;
+
 const CV_CONFIGS = [
   {
     key: "analytics",
     filename: "analytics-cv.pdf",
     badge: "RESUME",
     title: "International Resume",
-    subtitle: "GA4 · GTM · FB CAPI · Global Roles",
+    tagline: "Sharp. Focused. Ready to Impress.",
+    subtitle: "Analytics · AI-Powered · Tracking · Growth Strategy",
     description:
-      "Best for Upwork, Fiverr, and international clients. Clean 1-page format.",
-    tags: ["GA4", "GTM", "FB CAPI", "Looker Studio", "Server-Side"],
+      "7+ years of expertise distilled into one powerful document — built for decision-makers who value clarity over noise.",
+    tags: SHARED_TAGS,
     previewLabel: "Preview Resume",
     downloadLabel: "Download Resume",
     Icon: BarChart2,
@@ -28,10 +31,11 @@ const CV_CONFIGS = [
     filename: "business-analyst-cv.pdf",
     badge: "CV",
     title: "Full CV — Bangladesh & Local",
-    subtitle: "eCommerce · SaaS · Agile · BA Roles",
+    tagline: "Deep Dive Into My Expertise.",
+    subtitle: "Business Analysis · Data Intelligence · Analytics · Strategy",
     description:
-      "Best for local companies, recruitment agencies, and detailed role applications. Comprehensive 2-page format.",
-    tags: ["Agile", "SRS", "WBS", "eCommerce", "Stakeholder Mgmt"],
+      "The full story behind the results — Business Analysis, Data Intelligence, and AI-driven strategy, backed by real numbers and proven outcomes.",
+    tags: SHARED_TAGS,
     previewLabel: "Preview CV",
     downloadLabel: "Download CV",
     Icon: Briefcase,
@@ -113,8 +117,9 @@ const CV = () => {
                   <cv.Icon size={22} className="text-primary" />
                 </div>
 
-                {/* Title & subtitle */}
+                {/* Title, tagline & subtitle */}
                 <h2 className="font-display text-xl font-bold mb-1">{cv.title}</h2>
+                <p className="text-muted-foreground text-xs italic mb-2">{cv.tagline}</p>
                 <p className="text-primary text-sm font-medium mb-3">{cv.subtitle}</p>
                 <p className="text-muted-foreground text-sm mb-5 leading-relaxed flex-1">
                   {cv.description}
@@ -143,10 +148,10 @@ const CV = () => {
                   </button>
                   <button
                     onClick={() => handleDownload(cv.filename)}
-                    className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-4 py-2.5 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity"
+                    className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-4 py-2.5 rounded-xl text-sm font-semibold hover:opacity-90 transition-all shadow-[0_0_18px_hsl(172_66%_50%_/_0.35)] hover:shadow-[0_0_30px_hsl(172_66%_50%_/_0.55)] whitespace-nowrap"
                   >
                     <Download size={15} />
-                    {cv.downloadLabel} ↓
+                    {cv.downloadLabel}
                   </button>
                 </div>
               </div>
